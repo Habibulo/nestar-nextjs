@@ -16,5 +16,3 @@ const Home: NextPage = () => {
       </Container>
   );
 };
-
-export default withLayoutMain(Home);
