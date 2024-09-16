@@ -4,7 +4,6 @@ import { CssBaseline } from "@mui/material";
 import { light } from "../scss/MaterialTheme";
 import { useState } from "react";
 
-
 export default function App({ Component, pageProps }: AppProps) {
   console.log("App");
   // @ts-ignore
@@ -13,8 +12,8 @@ export default function App({ Component, pageProps }: AppProps) {
   // Socket.oi
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline/>
+      <CssBaseline />
       <Component {...pageProps} />
-    </ThemeProvider>);
+    </ThemeProvider>
+  );
 }
-
