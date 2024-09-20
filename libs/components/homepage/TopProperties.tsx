@@ -9,10 +9,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const TopProperties = () => {
-  const [topProperties, setTopProperties] = useState<number[]>([
-    1, 2, 3, 4, 5, 6, 7,
-  ]);
-
+  const [topProperties, setTopProperties] = useState<number[]>
+        ([1, 2, 3, 4, 5, 6, 7]);
+    
   return (
     <Stack className={"top-properties"}>
       <Stack className={"container"}>
@@ -55,4 +54,7 @@ const TopProperties = () => {
     </Stack>
   );
 };
+<<<<<<< HEAD
+export default TopProperties;
+=======
 export default TopProperties;
