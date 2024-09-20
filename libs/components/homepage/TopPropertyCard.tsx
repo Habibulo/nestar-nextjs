@@ -3,6 +3,7 @@ import { Stack, Box, Divider, Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+
 const TopPropertyCard = () => {
   return (
     <Stack className="top-card-box">
@@ -57,6 +58,7 @@ const TopPropertyCard = () => {
             <IconButton color={"default"}>
               <FavoriteIcon />
             </IconButton>
+
             <Typography className="view-cnt">200</Typography>
           </div>
         </div>

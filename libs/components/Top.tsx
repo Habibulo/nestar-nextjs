@@ -1,6 +1,7 @@
 import { Logout } from "@mui/icons-material";
 import { Box, Menu, MenuItem, Stack } from "@mui/material";
 import Link from "next/link";
+
 const Top = () => {
   return (
     <Stack className={"navbar"}>
@@ -50,4 +51,5 @@ const Top = () => {
     </Stack>
   );
 };
+
 export default Top;

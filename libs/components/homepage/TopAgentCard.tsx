@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
+
 const TopAgentCard = () => {
   return (
     <Stack className="top-agent-card">
@@ -16,4 +17,5 @@ const TopAgentCard = () => {
     </Stack>
   );
 };
+
 export default TopAgentCard;

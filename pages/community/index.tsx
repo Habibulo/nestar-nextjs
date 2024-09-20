@@ -1,11 +1,12 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Stack } from "@mui/material";
-import { NextPage } from "next/types";
+import { NextPage } from "next";
+import { useState } from "react";
 
 const Community: NextPage = () => {
   return (
     <div style={{ margin: "20px 0" }}>
-      <Stack className="container">COMUNITY</Stack>
+      <Stack className="container">Community</Stack>
     </div>
   );
 };

@@ -7,7 +7,6 @@ import "../scss/app.scss";
 import "../scss/pc/main.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
-  console.log("App");
   // @ts-ignore
   const [theme, setTheme] = useState(createTheme(light));
 

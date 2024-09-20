@@ -7,8 +7,12 @@ import TopPropertyCard from "./TopPropertyCard";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-const TopProperties = ({ initialInput, ...props }: any) => {
-  const [topProperties, setTopProperties] = useState<number[]>(initialInput);
+
+const TopProperties = () => {
+  const [topProperties, setTopProperties] = useState<number[]>([
+    1, 2, 3, 4, 5, 6, 7,
+  ]);
+
   return (
     <Stack className={"top-properties"}>
       <Stack className={"container"}>
@@ -19,7 +23,7 @@ const TopProperties = ({ initialInput, ...props }: any) => {
           </Box>
           <Box className={"right"}>
             <div className={"pagination-box"}>
-              <WestIcon className={"swiper-top-prev"} />{" "}
+              <WestIcon className={"swiper-top-prev"} />
               <div className={"swiper-top-pagination"}></div>
               <EastIcon className={"swiper-top-next"} />
             </div>
@@ -50,8 +54,5 @@ const TopProperties = ({ initialInput, ...props }: any) => {
       </Stack>
     </Stack>
   );
-};
-TopProperties.defaultProps = {
-  initialInput: [1, 2, 3, 4, 5, 6, 71],
 };
 export default TopProperties;

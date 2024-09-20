@@ -14,6 +14,7 @@ const withLayoutBasic = (Component: any) => {
           <Stack id={"top"}>
             <Top />
           </Stack>
+
           <Stack
             className={"header-basic"}
             style={{
@@ -23,13 +24,15 @@ const withLayoutBasic = (Component: any) => {
             }}
           >
             <Stack className={"container"}>
-              <strong>Property Search</strong>
+              <strong>Search</strong>
               <span>We are glad to see you again!</span>
             </Stack>
           </Stack>
+
           <Stack id={"main"}>
             <Component {...props} />
           </Stack>
+
           <Stack id={"footer"}>
             <Footer />
           </Stack>

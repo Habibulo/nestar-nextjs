@@ -4,6 +4,7 @@ import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TrendPropertyCard from "./TrendPropertyCard";
+
 const TrendProperties = () => {
   const [trendProperties, setTrendProperties] = useState<number[]>([
     1, 2, 3, 4, 5, 6, 7,

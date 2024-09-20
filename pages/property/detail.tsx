@@ -2,10 +2,12 @@ import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Container, Stack } from "@mui/material";
 import { NextPage } from "next";
 
-const PropertyDetail: NextPage = () => {
+const PropertyDetail:NextPage = () => {
   return (
     <>
+
       <Container>Property Detail</Container>
+   
     </>
   );
 };

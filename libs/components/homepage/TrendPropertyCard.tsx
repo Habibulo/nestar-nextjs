@@ -2,6 +2,7 @@ import React from "react";
 import { Stack, Box, Divider, Typography, IconButton } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+
 const TrendPropertyCard = () => {
   return (
     <Stack className={"trend-card-box"}>
@@ -59,4 +60,5 @@ const TrendPropertyCard = () => {
     </Stack>
   );
 };
+
 export default TrendPropertyCard;

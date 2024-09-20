@@ -1,6 +1,8 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Stack } from "@mui/material";
-import { NextPage } from "next/types";
+import { NextPage } from "next";
+import { useState } from "react";
+
 const CS: NextPage = () => {
   return (
     <div style={{ margin: "20px 0" }}>
@@ -8,4 +10,5 @@ const CS: NextPage = () => {
     </div>
   );
 };
+
 export default withLayoutBasic(CS);
