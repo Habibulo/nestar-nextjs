@@ -3,8 +3,10 @@ import { Stack, Box } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TopAgentCard from "./TopAgentCard";
-const TopAgents = ({ initialInput, ...props }: any) => {
-  const [topAgents, setTopAgents] = useState<number[]>([1, 2, 3, 4, 5, 6, 7]); // [1, 2, 3, 4, 5, 6, 7] =>[initialInput]
+
+const TopAgents = () => {
+  const [topAgents, setTopAgents] = useState<number[]>([1, 2, 3, 4, 5, 6, 7]);
+
   return (
     <Stack className={"top-agents"}>
       <Stack className={"container"}>
