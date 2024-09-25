@@ -1,15 +1,23 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 import { Container, Stack } from "@mui/material";
 import { NextPage } from "next";
+import React from "react";
 
-const PropertyDetail:NextPage = () => {
-  return (
-    <>
+const Propertydetail = () => {
+  const device = useDeviceDetect();
 
-      <Container>Property Detail</Container>
-   
-    </>
-  );
+  if (device === "mobile") {
+    return <Stack>Mobile Detail</Stack>;
+  } else {
+    return (
+      <>
+        <Stack sx={{ background: "#81c784" }}> Header Basic</Stack>
+        <Container>Property Detail</Container>
+        <Stack sx={{ bgcolor: "#a1887f" }}>Footer</Stack>
+      </>
+    );
+  }
 };
 
-export default withLayoutBasic(PropertyDetail);
+export default Propertydetail;
